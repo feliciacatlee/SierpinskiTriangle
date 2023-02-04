@@ -13,13 +13,13 @@ int i = 0;
 boolean up = true;
 public void mouseMoved() { //optional
   if(up){ //blue to white
-    fill(i/2, i, 2*i);
+    fill(i*2, i, i);
     i++;
     if(i == 255)
       up = false;
   }
   if(!up){
-    fill(i/2, i, 2*i);
+    fill(i, i, 2*i);
     i--;
     if(i == 0)
       up = true;
